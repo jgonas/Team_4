@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adventure Sports</title>
+  <style>
+        body {
+            background-color: #87CEEB; /* Set the background color for the entire page */
+            color: #333; /* Set the text color for the entire page */
+        }
 
+        h1 {
+            color: #00008B; /* Set the color for h1 heading */
+        }
+
+        p {
+            color: #555; /* Set the color for paragraphs */
+        }
+
+        /* You can add more styles for other elements as needed */
+  
+ 
+        body {
+            text-align: center;
+        }
+
+       .text-box {
+            border: 3px solid #ADD8E6; /* Set border properties, you can adjust the color, width, etc. */
+            padding: 10px; /* Optional: Add some padding for space inside the box */
+            display: inline-block; /* Keep the box inline with the text */
+        }
+  </style>
+</head>
+<body>
+<img src="https://images.assetsdelivery.com/compings_v2/natchapohn/natchapohn1805/natchapohn180500055.jpg"width = 200 height = 140>
+  <h1>Adventure Sports</h1>
+  <h2>Hang Gliding</h2>
+  <p>Experience the thrill of hang gliding with our expert instructors. Enjoy breathtaking views of the surrounding landscape as you soar through the sky.</p>
+  <img src="hang-gliding.jpg" alt="Hang Gliding" />
+  <h2>Skydiving</h2>
+  <p>Take the leap of faith and experience the rush of skydiving. Our experienced instructors will guide you through the entire experience, ensuring your safety and enjoyment.</p>
+  <img src="skydiving.jpg" alt="Skydiving" />
+  <h2>Hang Gliding and Skydiving Combo</h2>
+  <p>Experience both hang gliding and skydiving with our combo package. Enjoy the thrill of both adventure sports and take in the breathtaking views of the surrounding landscape.</p>
+  <img src="hang-gliding-skydiving.jpg" alt="Hang Gliding and Skydiving Combo" />
+  <h2>Product Specs</h2>
+  <p><a href="hang-glider-specs.html">Hang Glider:</a> <a href="parachute-specs.html">Parachute:</a></p>
+  <h2>Book Now</h2>
+  <p><a href="booking.html">Book Now</a></p>
+  <h2>Contact Us</h2>
+  <p><a href="contact.html">Contact Us</a></p>
+  <p>Last modified: <script>document.write(new Date().toLocaleString());</script></p>
+</body>
+</html>
