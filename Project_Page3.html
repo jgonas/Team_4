@@ -59,23 +59,26 @@
 </p>
   <img src= " https://ae01.alicdn.com/kf/HTB1nQgNouSSBuNjy0Flq6zBpVXaU/JWEIJIAO-Skydiving-Parachute-Keychain-Figure-Silhouette-Daring-Sports-Sky-Diving-Parachuting-Keyrings-Custom-Key-Pendant-SD16.jpg_640x640.jpg" width = 200 height = 140>
  
+  
     <script>
-        // Function to get current date and time in a specified format
-        function getCurrentDateTime() {
-            var date = new Date();
-            var dateString = date.toLocaleDateString(); // Format: MM/DD/YYYY
-            var timeString = date.toLocaleTimeString(); // Format: HH:MM:SS
-            return dateString + " " + timeString;
+        // Function to format the timestamp
+        function formatTimestamp(timestamp) {
+            var date = new Date(timestamp);
+            return date.toLocaleString(); // Format the date according to the browser's locale
         }
 
-        // Function to update the footer with the current date and time
+        // Function to update the footer with the last edited timestamp
         function updateFooter() {
             var lastEditedElement = document.getElementById("last-edited");
-            lastEditedElement.innerText = "Last edited: " + getCurrentDateTime();
+            lastEditedElement.innerText = "Last edited: " + formatTimestamp(document.lastModified);
         }
 
         // Call updateFooter() when the page finishes loading
-        window.addEventListener("load", updateFooter);
+        window.addEventListener("load", function() {
+            updateFooter(); // Initial update
+            // Update footer every 5 seconds
+            setInterval(updateFooter, 5000);
+        });
     </script>
 </head>
 <body>
