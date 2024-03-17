@@ -92,5 +92,25 @@
 
 </body>
 
+<script>
+        // Function to format the timestamp
+        function formatTimestamp(timestamp) {
+            var date = new Date(timestamp);
+            return date.toLocaleString(); // Format the date according to the browser's locale
+        }
+
+        // Function to update the footer with the last edited timestamp
+        function updateFooter() {
+            var lastEditedElement = document.getElementById("last-edited");
+            lastEditedElement.innerText = "Last edited: " + formatTimestamp(document.lastModified);
+        }
+
+        // Call updateFooter() when the page finishes loading
+        window.addEventListener("load", function() {
+            updateFooter(); // Initial update
+            // Update footer every 5 seconds
+            setInterval(updateFooter, 5000);
+        });
+    </script>
 
 </html>
