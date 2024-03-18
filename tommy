@@ -7,13 +7,18 @@
             background-color: #87CEEB; /* Set the background color for the entire page */
             color: #333; /* Set the text color for the entire page */
         }
+       h1{
+            font-family: 'Helvetica', sans-serif;
+        }
 
-        h1 {
+       
+      h1 {
             color: #00008B; /* Set the color for h1 heading */
         }
 
         p {
             color: #555; /* Set the color for paragraphs */
+            font-family: 'Times New Roman', Times, serif;  
         }
 
         /* You can add more styles for other elements as needed */
@@ -24,7 +29,12 @@
         }
 
        .text-box {
-            border: 3px solid #ADD8E6; /* Set border properties, you can adjust the color, width, etc. */
+            border: 4px solid #ADD8E6; /* Set border properties, you can adjust the color, width, etc. */
+            padding: 10px; /* Optional: Add some padding for space inside the box */
+            display: inline-block; /* Keep the box inline with the text */
+        }
+       .text-box1 {
+            border: 4px solid #ADD8E6; /* Set border properties, you can adjust the color, width, etc. */
             padding: 10px; /* Optional: Add some padding for space inside the box */
             display: inline-block; /* Keep the box inline with the text */
         }
@@ -38,7 +48,7 @@
   <img src="hang-gliding.jpg" alt="Hang Gliding" />
   <h2>Skydiving</h2>
   <p>Take the leap of faith and experience the rush of skydiving. Our experienced instructors will guide you through the entire experience, ensuring your safety and enjoyment.</p>
-  <img src="skydiving.jpg" alt="Skydiving" />
+  <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fskydiveperris.com%2Fwp-content%2Fuploads%2F2023%2F10%2Fafrican-american-woman-on-skydive-wearing-red-plaid-shirt.jpg&tbnid=q2ZWWmPZXWfCgM&vet=12ahUKEwjvtMOwrt2EAxW2o4kEHXh8DjEQMygKegUIARCDAQ..i&imgrefurl=https%3A%2F%2Fskydiveperris.com%2Fblog%2Fstep-by-step-skydiving-guide%2F&docid=UBSgMwSVJAbRtM&w=960&h=640&q=skydiving&ved=2ahUKEwjvtMOwrt2EAxW2o4kEHXh8DjEQMygKegUIARCDAQ.jpg"width=400 height=400/>
   <h2>Hang Gliding and Skydiving Combo</h2>
   <p>Experience both hang gliding and skydiving with our combo package. Enjoy the thrill of both adventure sports and take in the breathtaking views of the surrounding landscape.</p>
   <img src="hang-gliding-skydiving.jpg" alt="Hang Gliding and Skydiving Combo" />
@@ -48,6 +58,29 @@
   <p><a href="booking.html">Book Now</a></p>
   <h2>Contact Us</h2>
   <p><a href="contact.html">Contact Us</a></p>
-  <p>Last modified: <script>document.write(new Date().toLocaleString());</script></p>
+    <script>
+        // Function to format the timestamp
+        function formatTimestamp(timestamp) {
+            var date = new Date(timestamp);
+            return date.toLocaleString(); // Format the date according to the browser's locale
+        }
+
+        // Function to update the footer with the last edited timestamp
+        function updateFooter() {
+            var lastEditedElement = document.getElementById("last-edited");
+            lastEditedElement.innerText = "Last edited: " + formatTimestamp(document.lastModified);
+        }
+
+        // Call updateFooter() when the page finishes loading
+        window.addEventListener("load", function() {
+            updateFooter(); // Initial update
+            // Update footer every 5 seconds
+            setInterval(updateFooter, 5000);
+        });
+    </script>
+  
+  <footer>
+        <p id="last-edited">Last edited: Loading...</p>
+   </footer>	
 </body>
 </html>
