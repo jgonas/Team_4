@@ -94,13 +94,37 @@ text-align: center;
      </section>
 
 <style>
+    ul {
+        list-style-type: none; /* Remove bullets from list items */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+    }
+
+    li {
+        margin-bottom: 20px; /* Add some bottom margin for list items */
+        overflow: auto; /* Clear floats */
+    }
+
     .team-member-image {
-        width: 60px; /* Adjust the width to fit your design */
+        width: 100px; /* Adjust the width as necessary */
         height: auto; /* Maintain aspect ratio */
         float: right; /* Align images to the right */
         margin-left: 10px; /* Add some spacing between the name and image */
+        vertical-align: middle; /* Align image vertically with the text */
+        border: 1px solid #ccc; /* Optional: add a border to the image */
+        padding: 3px; /* Optional: add some padding to the image */
+        box-shadow: 2px 2px 2px #888888; /* Optional: add a shadow to the image */
+    }
+
+    li strong {
+        display: inline-block; /* Make the name an inline-block element */
+        width: calc(100% - 120px); /* Adjust the width considering the image width */
+        text-align: left; /* Align the text to the left */
+        vertical-align: middle; /* Align the text vertically */
+        margin-right: 10px; /* Optional: add some right margin to the text */
     }
 </style>
+
 
     </main>
 
