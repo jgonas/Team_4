@@ -20,7 +20,7 @@
             padding: 20px;
         }
         h1 {
-            color: #00008B;
+            color: #333;
         }
         main {
             padding: 20px;
@@ -28,20 +28,19 @@
         h2 {
             color: #4682B4;
             margin: 0 0 20px 0;
-            font-family: Times New Roman
         }
         p {
             margin: 0 0 20px 0;
         }
         .management-team {
+            list-style-type: none;
             padding: 0;
             margin: 0;
             text-align: left;
         }
         .management-team li {
             margin-bottom: 20px;
-            overflow: hidden
-          
+            overflow: hidden;
         }
         .management-team img {
             width: 100px;
@@ -55,14 +54,10 @@
         .team-member-title {
             line-height: 100px;
         }
-        .contact-info {
+        .contact-info, .resources {
             text-align: center;
             margin-top: 50px;
             margin-bottom: 20px;
-        }
-        hr {
-            border: 20px solid #00008B; /* Set the border style and color */
-            margin: 10px 0; /* Add margin for spacing */
         }
     </style>
 </head>
@@ -82,69 +77,30 @@
         </section>
         <section id="management-team">
             <h2>Management Team</h2>
-            <ol class="management-team">
-                <li>
-                    <span class="team-member-title"><strong>Claire Hawks</strong> - Co-founder and CEO </span>
-                    <img src="claire.png">
-                </li>
-                <li>
-                    <span class="team-member-title"><strong>Ella McCoy</strong> - Co-founder and CFO</span>
-                    <img src="ella.png">
-                </li>
-                <li>
-                    <span class="team-member-title"><strong>Tommy Holland</strong> - Head of Operations</span>
-                    <img src="tommy.png">
-                </li>
-                <li>
-                    <span class="team-member-title"><strong>John Gonas</strong> - Marketing Director</span>
-                    <img src="john.png">
-                </li>
-            </ol>
-            <p style="font-size: 14px;><u>
-                <i>Our team brings together a wealth of experience and expertise in the field of adventure sports. Together, we are dedicated to providing you with unforgettable experiences and ensuring your safety at every step. If there are any problems with the quality of our services, this executive team will move mountains to make the experience satisfactory.</i>
-            </u></p>
+            <ul class="management-team">
+                <li><span class="team-member-title"><strong>Claire Hawks</strong> - Co-founder and CEO</span><img src="claire.png"></li>
+                <li><span class="team-member-title"><strong>Ella McCoy</strong> - Co-founder and CFO</span><img src="ella.png"></li>
+                <li><span class="team-member-title"><strong>Tommy Holland</strong> - Head of Operations</span><img src="tommy.png"></li>
+                <li><span class="team-member-title"><strong>John Gonas</strong> - Marketing Director</span><img src="john.png"></li>
+            </ul>
+            <p>Our team brings together a wealth of experience and expertise in the field of adventure sports. Together, we are dedicated to providing you with unforgettable experiences and ensuring your safety at every step. If there are any problems with the quality of our services, this executive team will move mountains to make the experience satisfactory.</p>
         </section>
-        <hr>
         <div class="contact-info">
             <h4><u>Contact Us</u></h4>
             <p>Phone Number: (888)-999-8989</p>
             <p>Email: HH.hangdive@gmail.com</p>
             <a href="mailto:HH.hangdive@gmail.com">Send Email</a>
         </div>
+        <section id="resources" class="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Hang_gliding" target="_blank">History of Hang Gliding</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Skydiving" target="_blank">History of Skydiving</a></li>
+                <li><a href="Reasons_to_Go_Skydive.pdf" target="_blank">Reasons to Go Skydive (PDF)</a></li>
+            </ul>
+        </section>
     </main>
-
-
-
-<script>
-        // Function to format the timestamp
-        function formatTimestamp(timestamp) {
-            var date = new Date(timestamp);
-            return date.toLocaleString(); // Format the date according to the browser's locale
-        }
-
-        // Function to update the footer with the last edited timestamp
-        function updateFooter() {
-            var lastEditedElement = document.getElementById("last-edited");
-            lastEditedElement.innerText = "Last edited: " + formatTimestamp(document.lastModified);
-        }
-
-        // Call updateFooter() when the page finishes loading
-        window.addEventListener("load", function() {
-            updateFooter(); // Initial update
-            // Update footer every 5 seconds
-            setInterval(updateFooter, 5000);
-        });
-    </script>
-    
-<footer>
-        <p id="last-edited">Last edited: Loading...</p>
-</footer>
-
 </body>
-
-
-  
-
-    
 </html>
+
 
