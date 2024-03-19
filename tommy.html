@@ -38,6 +38,12 @@
             padding: 10px; /* Optional: Add some padding for space inside the box */
             display: inline-block; /* Keep the box inline with the text */
         }
+        .warning {
+            border: 1px solid yellow; /* Thin yellow line */
+            padding: 10px; /* Some padding inside the border */
+            margin: 10px; /* Margin outside the border */
+            font-style: italic; /* Italic text */
+        }
     hr {
             border: 20px solid #00008B; /* Set the border style and color */
             margin: 10px 0; /* Add margin for spacing */
@@ -56,12 +62,11 @@
   <h2>Hang Gliding and Skydiving Combo</h2>
   <p>Experience both hang gliding and skydiving with our combo package. Enjoy the thrill of both adventure sports and take in the breathtaking views of the surrounding landscape.</p>
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaW6eqbOLFL184fBOsANo_djm66W_5i-d2Hw&usqp=CAU" alt="Hang Gliding and Skydiving Combo" />
-  <h2>Product Specs</h2>
-  <p><a href="hang-glider-specs.html">Hang Glider:</a> <a href="parachute-specs.html">Parachute:</a></p>
+  <div class="warning">
+    Participants for parachuting need to be 18+ and participants of hang gliding need to be 16+.
+  </div>
   <h2>Book Now</h2>
   <p><a href="booking.html">Book Now</a></p>
-  <h2>Contact Us</h2>
-  <p><a href="contact.html">Contact Us</a></p>
     <script>
         // Function to format the timestamp
         function formatTimestamp(timestamp) {
