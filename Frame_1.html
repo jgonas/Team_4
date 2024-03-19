@@ -19,21 +19,46 @@ text-align: center;
 <h1> Harry and Harriet’s Hang-gliding Haven </h1>
 
 <p>
-  Learn about our company history and our team 
+  Learn about our company history and our team:  
   <a href="https://jgonas.github.io/Team_4/index.html" target="showframe" > Company History and Management </a>.
 </p>
  
 <p>
-  Find out what our services include 
+  What our services include:  
   <a href="https://jgonas.github.io/Team_4/tommy.html" target="showframe" > Services </a>.
 </p>
   
 <p>
- Here are our products
+ Here are our products: 
   <a href="https://jgonas.github.io/Team_4/Project_Page3.html" target="showframe" > Product Offering </a>.
 </p>
 
   <p>
-  Hear from our previous customers 
+  Hear from our previous customers:  
   <a href="https://jgonas.github.io/Team_4/cust_test.html" target="showframe" > Customer Testimonies </a>.
 </p>
+
+ <script>
+        // Function to format the timestamp
+        function formatTimestamp(timestamp) {
+            var date = new Date(timestamp);
+            return date.toLocaleString(); // Format the date according to the browser's locale
+        }
+
+        // Function to update the footer with the last edited timestamp
+        function updateFooter() {
+            var lastEditedElement = document.getElementById("last-edited");
+            lastEditedElement.innerText = "Last edited: " + formatTimestamp(document.lastModified);
+        }
+
+        // Call updateFooter() when the page finishes loading
+        window.addEventListener("load", function() {
+            updateFooter(); // Initial update
+            // Update footer every 5 seconds
+            setInterval(updateFooter, 5000);
+        });
+    </script>
+  
+  <footer>
+        <p id="last-edited">Last edited: Loading...</p>
+   </footer>
