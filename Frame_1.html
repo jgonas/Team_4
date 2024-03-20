@@ -1,64 +1,53 @@
-<html> 
-<style>
- body {
-text-align: center;
- }
- h1{
-   font-family: 'Helvetica', sans-serif;
-   color: #00008B;    
- }
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="text-align: center;">
 
-        p {
-            color: #555; 
-            font-family: 'Times New Roman', Times, serif;  
-           
-        }
-</style>
-  <img src="https://images.assetsdelivery.com/compings_v2/natchapohn/natchapohn1805/natchapohn180500055.jpg"width = 200 height = 140>
+<img src="https://images.assetsdelivery.com/compings_v2/natchapohn/natchapohn1805/natchapohn180500055.jpg" width="200" height="140">
 
-<h1> Harry and Harriet’s Hang-gliding Haven </h1>
+<h1 style="font-family: 'Helvetica', sans-serif; color: #00008B;">Harry and Harriet’s Hang-gliding Haven</h1>
 
-<p>
-  Learn about our company history and our team:  
-  <a href="https://jgonas.github.io/Team_4/index.html" target="showframe" > Company History and Management </a>.
+<p style="color: #555; font-family: 'Times New Roman', Times, serif;">
+    Learn about our company history and our team:  
+    <a href="https://jgonas.github.io/Team_4/index.html" target="showframe">Company History and Management</a>.
 </p>
  
-<p>
-  What our services include:  
-  <a href="https://jgonas.github.io/Team_4/services.html" target="showframe" > Services </a>.
+<p style="color: #555; font-family: 'Times New Roman', Times, serif;">
+    What our services include:  
+    <a href="https://jgonas.github.io/Team_4/services.html" target="showframe">Services</a>.
 </p>
   
-<p>
- Here are our products: 
-  <a href="https://jgonas.github.io/Team_4/ProductOffering2.html" target="showframe" > Product Offering </a>.
+<p style="color: #555; font-family: 'Times New Roman', Times, serif;">
+    Here are our products: 
+    <a href="https://jgonas.github.io/Team_4/ProductOffering2.html" target="showframe">Product Offering</a>.
 </p>
 
-  <p>
-  Hear from our previous customers:  
-  <a href="https://jgonas.github.io/Team_4/cust_test2.html" target="showframe" > Customer Testimonies </a>.
+<p style="color: #555; font-family: 'Times New Roman', Times, serif;">
+    Hear from our previous customers:  
+    <a href="https://jgonas.github.io/Team_4/cust_test2.html" target="showframe">Customer Testimonies</a>.
 </p>
 
- <script>
-        
-        function formatTimestamp(timestamp) {
-            var date = new Date(timestamp);
-            return date.toLocaleString(); 
-        }
+<script>
+function formatTimestamp(timestamp) {
+    var date = new Date(timestamp);
+    return date.toLocaleString(); 
+}
 
-        
-        function updateFooter() {
-            var lastEditedElement = document.getElementById("last-edited");
-            lastEditedElement.innerText = "Last edited: " + formatTimestamp(document.lastModified);
-        }
+function updateFooter() {
+    var lastEditedElement = document.getElementById("last-edited");
+    lastEditedElement.innerText = "Last edited: " + formatTimestamp(document.lastModified);
+}
 
-        
-        window.addEventListener("load", function() {
-            updateFooter(); 
-            
-            setInterval(updateFooter, 5000);
-        });
-    </script>
-  
-  <footer>
-        <p id="last-edited">Last edited: Loading...</p>
-   </footer>
+window.addEventListener("load", function() {
+    updateFooter(); 
+    setInterval(updateFooter, 5000);
+});
+</script>
+
+<footer>
+    <p id="last-edited">Last edited: Loading...</p>
+</footer>
+
+</body>
+</html>
