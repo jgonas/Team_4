@@ -84,22 +84,22 @@
   <h2>Preparation is Key</h2>
   <a href="https://www.skydivecarolina.com/blog/how-to-prepare-first-skydive/">Click this link to access a great breakdown on what you need to do before your big adventure!!</a>
     <script>
-        // Function to format the timestamp
+        
         function formatTimestamp(timestamp) {
             var date = new Date(timestamp);
-            return date.toLocaleString(); // Format the date according to the browser's locale
+            return date.toLocaleString(); 
         }
 
-        // Function to update the footer with the last edited timestamp
+        
         function updateFooter() {
             var lastEditedElement = document.getElementById("last-edited");
             lastEditedElement.innerText = "Last edited: " + formatTimestamp(document.lastModified);
         }
 
-        // Call updateFooter() when the page finishes loading
+        
         window.addEventListener("load", function() {
-            updateFooter(); // Initial update
-            // Update footer every 5 seconds
+            updateFooter(); 
+            
             setInterval(updateFooter, 5000);
         });
     </script>
