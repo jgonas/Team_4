@@ -1,77 +1,9 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry and Harriet’s Hang-gliding Haven</title>
-    <style>
-        body {
-            background-color: #87CEEB;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            text-align: center;
-        }
-        .company-logo {
-            margin-top: 20px;
-        }
-        header {
-            padding: 20px;
-        }
-        h1 {
-            color: #00008B;
-        }
-        main {
-            padding: 20px;
-        }
-        h2 {
-            color: #4682B4;
-            margin: 0 0 20px 0;
-            font-family: Times New Roman;
-        }
-        p {
-            margin: 0 0 20px 0;
-        }
-        .management-team {
-            padding: 0;
-            margin: 0;
-            text-align: left;
-        }
-        .management-team li {
-            margin-bottom: 20px;
-            overflow: hidden;
-        }
-        .management-team img {
-            width: 100px;
-            height: auto;
-            float: right;
-            margin-left: 10px;
-            border: 1px solid #ccc;
-            padding: 3px;
-            box-shadow: 2px 2px 2px #888888;
-        }
-        .team-member-title {
-            line-height: 100px;
-        }
-        .contact-info, .resources {
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 20px;
-        }
-        hr {
-            border: 10px solid #00008B;
-            margin: 10px 0;
-        }
-        ol {
-            padding-left: 20px;
-            list-style-type: decimal;
-        }
-        li {
-            margin-bottom: 10px;
-            display: list-item;
-        }
-    </style>
 </head>
 <body>
     <img src="https://images.assetsdelivery.com/compings_v2/natchapohn/natchapohn1805/natchapohn180500055.jpg" alt="Harry and Harriet's Hang-gliding Haven" class="company-logo" width="200" height="140">
@@ -105,13 +37,12 @@
                 </section>
             </li>
             <li>
-    
                 <section id="resources" class="resources">
                     <h2>Resources</h2>
                     <ul>
                         <li><a href="https://en.wikipedia.org/wiki/Hang_gliding" target="_blank">History of Hang Gliding</a></li>
                         <li><a href="https://en.wikipedia.org/wiki/Skydiving" target="_blank">History of Skydiving</a></li>
-                        <li><a href="Reasons_to_Go_Skydiving_and_Hang_Gliding.pdf" download >Reasons to Go Skydiving and Hang Gliding (PDF)</a></li>
+                        <li><a href="Reasons_to_Go_Skydiving_and_Hang_Gliding.pdf" download>Reasons to Go Skydiving and Hang Gliding (PDF)</a></li>
                     </ul>
                 </section>
             </li>
@@ -125,30 +56,5 @@
         </div>
     </main>
 <script>
-        // Function to format the timestamp
-        function formatTimestamp(timestamp) {
-            var date = new Date(timestamp);
-            return date.toLocaleString(); 
-        }
-
-    
-        function updateFooter() {
-            var lastEditedElement = document.getElementById("last-edited");
-            lastEditedElement.innerText = "Last edited: " + formatTimestamp(document.lastModified);
-        }
-
-
-        window.addEventListener("load", function() {
-            updateFooter(); 
-            setInterval(updateFooter, 5000);
-        });
-    </script>
-  
-  <footer>
-        <p id="last-edited">Last edited: Loading...</p>
-   </footer>
-
-</body>
-</html>
 
 
