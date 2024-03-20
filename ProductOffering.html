@@ -4,32 +4,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colored Website</title>
     <style>
-      body {background-color: #87CEEB; /* Set the background color for the entire page */
-            /* Set the text color for the entire page */text-align: center;}
-      h1 {color: #00008B; font-family: 'Helvetica', sans-serif;/* Set the color for h1 heading */}
-      h3 {color: #00008B; font-family: 'Helvetica', sans-serif;/* Set the color for h1 heading */}
-      p {color: #333; /* Set the color and text style for paragraphs */}
+      body {background-color: #87CEEB; text-align: center;}
+      h1 {color: #00008B; font-family: 'Helvetica', sans-serif;}
+      h3 {color: #00008B; font-family: 'Helvetica', sans-serif;}
+      p {color: #333; }
       .textbox {border: 4px solid #ADD8E6;
                 padding: 10px;
                 display: inline-block; }
       
       ol {
-      text-align: center; /* Center the text */
-      list-style-position: inside; /* Place the bullets inside the list item */
+      text-align: center; 
+      list-style-position: inside; 
     }
     ol li {
-      text-align: center; /* Align text within list items to the left */
+      text-align: center; 
     }
       ul {color: #00008B;
-      text-align: center; /* Center the text */
-      list-style-position: inside; /* Place the bullets inside the list item */
+      text-align: center; 
+      list-style-position: inside; 
     }
     ul li {
-      text-align: center; /* Align text within list items to the left */
+      text-align: center; 
     }
       hr { 
-            border: 10px solid #00008B; /* Set the border style and color */
-            margin: 10px 0; /* Add margin for spacing */
+            border: 10px solid #00008B; 
+            margin: 10px 0; 
         }
       p1 {font-family: 'Times New Roman', Times, serif;}
   </style>
@@ -95,16 +94,16 @@
         // Function to format the timestamp
         function formatTimestamp(timestamp) {
             var date = new Date(timestamp);
-            return date.toLocaleString(); // Format the date according to the browser's locale
+            return date.toLocaleString(); 
         }
 
-        // Function to update the footer with the last edited timestamp
+       
         function updateFooter() {
             var lastEditedElement = document.getElementById("last-edited");
             lastEditedElement.innerText = "Last edited: " + formatTimestamp(document.lastModified);
         }
 
-        // Call updateFooter() when the page finishes loading
+
         window.addEventListener("load", function() {
             updateFooter(); // Initial update
             // Update footer every 5 seconds
